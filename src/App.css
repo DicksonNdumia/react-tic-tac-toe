@@ -1,0 +1,58 @@
+/* App.css */
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0f172a;
+}
+
+/* Each row of squares */
+.board-row {
+  display: flex;
+}
+
+/* Individual square */
+.square {
+  width: 100px;
+  height: 100px;
+  margin: 4px;
+  background-color: #1e293b;
+  border: 2px solid #38bdf8;
+  border-radius: 10px;
+  font-size: 48px;
+  font-weight: bold;
+  color: #38bdf8;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* Hover effect */
+.square:hover {
+  background-color: #334155;
+  transform: scale(1.04);
+}
+
+/* Click feedback */
+.square:active {
+  transform: scale(0.97);
+}
+
+/* Keyboard accessibility */
+.square:focus-visible {
+  outline: 3px solid #facc15;
+  outline-offset: 2px;
+}
+.status {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #38bdf8;
+}
