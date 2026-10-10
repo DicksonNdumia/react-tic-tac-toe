@@ -103,7 +103,7 @@ function Game() {
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
       </div>
       <div className="game-info">
-        <ol>{moves}</ol>
+        <ol className="moves">{moves}</ol>
       </div>
     </div>
   );
